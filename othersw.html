@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Others</title>
+</head>
+<body>
+
+    <header>
+        <h1>Others Sweets</h1>
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchRecipes()">Search</button>
+        </div>
+    </header>
+
+    <main class="recipe-container">
+        <!-- ... (your existing recipe content) ... -->
+    </main>
+
+    <script>
+        function searchRecipes() {
+            var input, filter, recipes, recipe, title, i;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            recipes = document.getElementsByClassName("recipe");
+
+            for (i = 0; i < recipes.length; i++) {
+                title = recipes[i].getElementsByTagName("h2")[0];
+                if (title) {
+                    if (title.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        recipes[i].style.display = "";
+                    } else {
+                        recipes[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+    <main class="recipe-container">
+
+        <div class="recipe" id="Cofee/Tea">
+            <img src= alt="Prawn Recipe Image">
+            <h2>Paal Kozhukattai</h2>
+            
+        </div>
+
+        <div class="recipe" id="Cofee/Tea">
+            <img src= alt="Prawn Recipe Image">
+            <h2>Karupatti Paniyaaram</h2>
+            
+        </div>
+
+        <div class="recipe" id="Cofee/Tea">
+            <img src= alt="Prawn Recipe Image">
+            <h2>Suzhiam</h2>
+            
+        </div>
+<div class="recipe" id="Cofee/Tea">
+        <img src= alt="Prawn Recipe Image">
+        <h2>Kozhukattai</h2>
+        
+    </div>
+
+    <div class="recipe" id="Cofee/Tea">
+        <img src= alt="Prawn Recipe Image">
+        <h2>Thengai Kozhukattai</h2>
+        
+    </div>
+
+    <div class="recipe" id="Cofee/Tea">
+        <img src= alt="Prawn Recipe Image">
+        <h2>Paasi paruppu Kozhukattai</h2>
+        
+    </div>
+       
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Adhirasam</h2>
+            
+        </div>
+
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Mysore Pak</h2>
+            
+        </div>         
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Jangiri</h2>
+            
+        </div>        
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Badusha</h2>
+            
+        </div>        
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Kavuni Arisi Sweet</h2>
+            
+        </div>        
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Coconut Burfi</h2>
+            
+        </div>   
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Palkova</h2>
+            
+        </div>        
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Nei Mysore Pakh</h2>
+            
+        </div>     
+
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Kaju Katli</h2>
+            
+        </div>        
+        
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Paal Paniyaram</h2>
+            
+        </div>    
+
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Sweet Sevai (Vermicelli)</h2>
+            
+        </div>   
+        
+    
+        <div class="recipe" id="Cofee/Tea">
+            <img src= >
+            <h2>Thengai Poli</h2>
+            
+        </div>
+   
+        
+
+
+
+    </main>
+
+
+</body>
+</html>
